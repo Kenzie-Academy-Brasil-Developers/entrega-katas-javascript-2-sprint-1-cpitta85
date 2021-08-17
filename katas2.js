@@ -63,18 +63,20 @@ console.assert(factorial(5) === 120, 'A função factorial não está funcionand
  * BONUS (aviso: o grau de dificuldade é bem maior !!!)
  */
 
-/* function fibonacci (n) {
-    let total = n
+function fibonacci (n) {
+    let numero = []    
+    numero[0] = 0
+    numero[1] = 1
     
-    for(let i = 1; i <= n; i++) {
-        total = add(i,total)
-        
+    for (let i = 2; i <= n; i++) {
+         
+        numero[i] = (numero[i-2]+numero[i-1])
+        resultado = numero[n]
+
     }
+   
+    return resultado
 
-    return total
 }
-console.log(factorial(7))
-
-// descomente a linha seguinte para testar sua função
+//descomente a linha seguinte para testar sua função
 console.assert(fibonacci(7) === 13, 'A função fibonacci não está funcionando como esperado');
- */
